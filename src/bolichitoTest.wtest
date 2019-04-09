@@ -19,7 +19,7 @@ test "el material de la pelota brilla"{
 	assert.notThat(pelota.material().brilla())
 }
 test"el material de la placa brilla"{
-	assert.notThat(placa.material().brilla())
+	assert.that(placa.material().brilla())
 }
 
 test "El bolichito es monocromático si tiene una remera y una placa roja" {
@@ -27,6 +27,9 @@ test "El bolichito es monocromático si tiene una remera y una placa roja" {
 	bolichito.ponerEnVidriera(placa)
 	
 	assert.that(bolichito.esMonocromatico())
+}
+test "la placa es roja"{
+	assert.that(placa.color()==rojo)
 }
 
 test "El bolichito no es monocromático si tiene una remera y una pelota" {
