@@ -43,8 +43,8 @@ object placa {
 	var _color
 	var _peso 
 	
-	method color() { return _color }
-	method setColor(color) { _color = rojo }
+	method color() { return rojo }
+	method setColor(color) { _color = color }
 	method material() { return cobre }
 	method peso() { return _peso }
 	method setPeso(peso) { _peso = peso }
